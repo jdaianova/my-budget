@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My budget</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400;500;600&family=Montserrat:wght@500&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="background">
+        <form>
+            <div class="container">
+                <div class="part-container header">
+                    <div class="header-title">
+                        <img id="img-money" src="money.png" alt="money">
+                        <h1>My budget</h1>
+                    </div>
+
+                    <div class="income-container">
+                        <div class="income-text">income:</div>
+                        <input type="number" id="myIncome" placeholder="how much">
+                        <span class="income-text">$</span>
+                    </div>
+                </div>
+                <div class="part-container main-container">
+                    <div class="part-income basic-needs">
+                        <div class="basic-needs-info">
+                            <p class="basic-needs-percent">50%</p>
+                            <p class="basic-needs-text">basic needs</p>
+                        </div>
+                        <div class="invisible-hidden total-info basic-needs-total">
+                            <p class="total-money basic-needs-total-money">0</p>
+                            <p class="total-text basic-needs-total-text">0</p>
+                        </div>
+                    </div>
+                    <div class="part-income money-saved">
+                        <div class="money-saved-info">
+                            <div class="money-saved-text">how much I want to save</div>
+                            <select id="money-saved-selected">
+                                <option disabled selected value="-1">choose</option>
+                                <option value="0">0%</option>
+                                <option value="0.1">10%</option>
+                                <option value="0.2">20%</option>
+                                <option value="0.3">30%</option>
+                                <option value="0.4">40%</option>
+                                <option value="0.5">50%</option>
+                            </select>
+                        </div>
+                        <div class="invisible-hidden total-info money-saved-total">
+                            <p class="total-money money-saved-total-money">0</p>
+                            <p class="total-text money-saved-total-text">0</p>
+                        </div>
+                    </div>
+
+                    <div class="part-income wishes">
+                        <div class="wishes-info">
+                            <div class="wishes-text">wishes, other</div>
+                            <select id="wishes-selected">
+                                <option disabled selected value="-1">choose</option>
+                                <option value="0">0%</option>
+                                <option value="0.1">10%</option>
+                                <option value="0.2">20%</option>
+                                <option value="0.3">30%</option>
+                                <option value="0.4">40%</option>
+                                <option value="0.5">50%</option>
+                            </select>
+                        </div>
+                        <div class="invisible-hidden total-info wishes-info-total">
+                            <p class="total-money wishes-info-total-money">0</p>
+                            <p class="total-text wishes-info-total-text">0</p>
+                        </div>
+                    </div>
+
+                    <div class="part-income personal">
+                        <div class="personal-info">
+                            <div class="personal-text">rest money for</div>
+                            <input id="personalSection" type="text" placeholder="name of section">
+                        </div>
+                        <div class="invisible-hidden total-info personal-info-total">
+                            <p class="total-money personal-info-total-money">0</p>
+                            <p class="total-text personal-info-total-text">0</p>
+                        </div>
+                    </div>
+                </div>
+                <label>
+                    <div class="part-container calculate">
+                        <button class="btn-calculate">calculate</button>
+                    </div>
+                </label>
+
+                <div class="part-container footer">
+                    <h2>Manage money again!</h2>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="index.js"></script>
+
+</html>
